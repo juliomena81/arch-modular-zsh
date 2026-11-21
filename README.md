@@ -136,6 +136,6 @@ bindkey -lL main                # current keymap
 
 ---
 
-## Créditos / Credits
+## Credits
 
 Built on top of [Zsh](https://www.zsh.org/), [starship](https://starship.rs/), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [eza](https://github.com/eza-community/eza), [bat](https://github.com/sharkdp/bat), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting), [zellij](https://zellij.dev/) and [yazi](https://yazi-rs.github.io/).
