@@ -1,0 +1,22 @@
+#compdef zj
+
+local -a layouts sesiones
+local d
+
+for d in ${ZELLIJ_LAYOUT_DIR:-$HOME/.config/zellij/layouts} /usr/share/zellij/layouts; do
+    layouts+=(${d}/*.kdl(N:t:r))
+done
+layouts=(${(u)layouts})
+
+sesiones=(${(f)"$(zellij list-sessions --short 2>/dev/null)"})
+
+_arguments -s \
+    '(-l --list)'{-l,--list}'[listar layouts y sesiones]' \
+    '1:layout o sesión:->target'
+
+case $state in
+    target)
+        _describe -t layouts 'layout' layouts
+        _describe -t sesiones 'sesión' sesiones
+        ;;
+esac
