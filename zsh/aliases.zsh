@@ -14,12 +14,12 @@ alias grep='grep --color=auto'
 alias cat='bat --style=header,grid,numbers'
 alias catp='bat -p'
 
-# System and utilities
+# Systems and utilities
 alias top='btop'
 alias df='duf'
 alias du='du -h'
 alias cp='cp -i --reflink=auto'
-alias cpr='rsync -ah --info-progress2'
+alias cpr='rsync -ah --info=progress2'
 alias mv='mv -iv'
 alias mkdir='mkdir -pv'
 alias help='tldr'
@@ -60,13 +60,12 @@ alias orphans='pacman -Qdt'
 # Zellij
 alias zd='zj dev'       # layout dev (nvim + shell)
 alias zy='zj yazi-nvim' # layout yazi + nvim
-alias zs='zellij'       # sesión limpia
-alias zl='zj -l'        # listar layouts y sesiones
+alias zs='zellij'       # clean session
+alias zl='zj -l'        # list layouts and sessions
 alias zk='zellij kill-session'
 alias zka='zellij kill-all-sessions'
 
-# Trash-cli
 alias rm="trash-put -fRi"
-alias trash-empty="empty"
-alias trash-list="list"
-alias trash-restore="restore"
+alias list="trash-list"
+alias restore="trash-restore"
+alias empty="trash-empty"
